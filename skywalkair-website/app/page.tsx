@@ -2,6 +2,13 @@ import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
+// pages
+import About from "./about/page";
+import CEO from "./ceo/page";
+import Client from "./client/page";
+import Service from "./services/page";
+import Contact from "./contact/page";
+
 export default function Home() {
   return (
     <>
@@ -23,12 +30,24 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <section id="about"></section>
-      <section id="services"></section>
-      <section id="testimonials"></section>
-      <section id="ceo"></section>
-      <section id="contact"></section>
-      <Footer />
+      <div className="flex flex-col">
+        <section id="about">
+          <About />
+        </section>
+        <section id="services">
+          <Service />
+        </section>
+        <section id="client">
+          <Client />
+        </section>
+        <section id="ceo">
+          <CEO />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Footer />
+      </div>
     </>
   );
 }
