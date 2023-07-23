@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import { BsArrowDownCircle } from "react-icons/bs";
 
 // pages
 import About from "./about/page";
@@ -27,6 +28,10 @@ export default function Home() {
           </div>
           <p>Logo</p>
         </div>
+        <BsArrowDownCircle
+          size={40}
+          className=" text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300"
+        />
       </main>
       <div className="flex flex-col">
         <section id="about">
