@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className=" h-screen ">
       <Nav />
-      <main className=" bg-blue-50 flex flex-col justify-center items-center  h-screen">
+      <main className=" bg-blue-50 flex flex-col justify-center items-center  h-screen ">
         <div className="flex px-5 py-2 m-10 items-center justify-between  gap-10">
           <div className="max-w-lg flex justify-center items-center flex-col">
             <h2 className=" text-4xl text-blue-900">
