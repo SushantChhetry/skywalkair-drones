@@ -1,12 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import { AiFillFacebook, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillYoutube,
+  AiFillPhone,
+} from "react-icons/ai";
 
 const Footer = () => {
   const urls = {
     facebook: "https://www.google.com/",
     instagram: "https://www.google.com/",
     youtube: "https://www.google.com/",
+    phone: "2562253874",
   };
 
   return (
@@ -28,7 +34,11 @@ const Footer = () => {
         <Link href={urls.youtube} target="_blank">
           <AiFillYoutube className="text-white hover:text-gray-400" size={30} />
         </Link>
+        <Link href={`tel: ${urls.phone}`}>
+          <AiFillPhone size={30} />
+        </Link>
       </div>
+
       <p className=" text-xs text-gray-300">
         &copy; 2023 Skywalkair. All rights reserved.
       </p>
