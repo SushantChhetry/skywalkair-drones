@@ -1,7 +1,7 @@
 import React from "react";
 
 function Event() {
-  return <div>Event</div>;
+  return <div className=" h-screen">Event</div>;
 }
 
 export default Event;

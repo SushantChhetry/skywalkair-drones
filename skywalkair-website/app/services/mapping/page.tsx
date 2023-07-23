@@ -1,7 +1,7 @@
 import React from "react";
 
 function Mapping() {
-  return <div>Mapping</div>;
+  return <div className=" h-screen">Mapping</div>;
 }
 
 export default Mapping;

@@ -1,7 +1,7 @@
 import React from "react";
 
 const CEO = () => {
-  return <div>CEO</div>;
+  return <div className=" h-screen">CEO</div>;
 };
 
 export default CEO;
