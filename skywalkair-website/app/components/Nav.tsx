@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="bg-blue-50">
       <nav className="flex items-center justify-between px-2 py-2">
         <button className="hover:text-gray-300 py-2 px-4 rounded-2xl text-blue-700 text-2xl">
           <GiHamburgerMenu />

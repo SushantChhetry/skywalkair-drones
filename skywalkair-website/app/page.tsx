@@ -11,23 +11,21 @@ import Contact from "./contact/page";
 
 export default function Home() {
   return (
-    <>
-      <main className=" bg-blue-50 h-screen">
-        <Nav />
-        <div>
-          <div className="flex justify-between px-10 py-2 m-10 items-center">
-            <div>
-              <h2 className=" text-4xl text-blue-900">
-                Enhance your visuals with awe-inspiring aerial perspectives
-                filmed by our expert drone videography services.
-              </h2>
-              <br />
-              <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
-                Start Now
-              </button>
-            </div>
-            <p>Logo</p>
+    <div className=" h-screen ">
+      <Nav />
+      <main className=" bg-blue-50 flex flex-col justify-center items-center  h-screen">
+        <div className="flex px-5 py-2 m-10 items-center justify-between  gap-10">
+          <div className="max-w-lg flex justify-center items-center flex-col">
+            <h2 className=" text-4xl text-blue-900">
+              Enhance your visuals with awe-inspiring aerial perspectives filmed
+              by our expert drone videography services.
+            </h2>
+            <br />
+            <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
+              Start Now
+            </button>
           </div>
+          <p>Logo</p>
         </div>
       </main>
       <div className="flex flex-col">
@@ -48,6 +46,6 @@ export default function Home() {
         </section>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
