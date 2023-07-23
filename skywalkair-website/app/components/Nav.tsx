@@ -9,7 +9,7 @@ const Nav = () => {
           <GiHamburgerMenu />
         </button>
 
-        <button className="bg-indigo-s600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
+        <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
           Contact Us!
         </button>
       </nav>

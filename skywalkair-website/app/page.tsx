@@ -14,7 +14,8 @@ export default function Home() {
                 Enhance your visuals with awe-inspiring aerial perspectives
                 filmed by our expert drone videography services.
               </h2>
-              <button className="bg-indigo-s600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
+              <br />
+              <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-2xl">
                 Start Now
               </button>
             </div>
@@ -22,6 +23,12 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <section id="about"></section>
+      <section id="services"></section>
+      <section id="testimonials"></section>
+      <section id="ceo"></section>
+      <section id="contact"></section>
+      <Footer />
     </>
   );
 }
