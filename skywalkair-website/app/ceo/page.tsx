@@ -5,8 +5,14 @@ const CEO = () => {
   return (
     <div className=" h-screen flex flex-col justify-center items-center">
       <div className=" w-screen max-w-5xl  h-4/6 my-4 flex flex-col justify-center items-center">
-        <Image src="/Drone_Isometric.png" alt="ceo" width={300} height={300} />
-        <p className=" text-indigo-700 text-3xl">
+        <Image
+          src="/CEO.jpg"
+          alt="ceo"
+          width={300}
+          height={300}
+          className="rounded-full border-2 my-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+        />
+        <p className=" text-indigo-700 text-3xl ">
           Expertise, commitment, and value.
         </p>
 
