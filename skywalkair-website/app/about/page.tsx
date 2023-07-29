@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className=" h-screen flex justify-evenly gap-3 items-center mx-10">
       <div>
-        Video<div className=" bg-indigo-700 -z-10 h-10 w-20"></div>
+        <div className=" bg-indigo-700 -z-10 h-10 w-screen max-w-xl">Video</div>
       </div>
 
       <div className="max-w-xs text-indigo-700">
