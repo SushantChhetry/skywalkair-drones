@@ -19,15 +19,13 @@ const Contact = () => {
             />
             <br />
 
-            <label className="text-indigo-700 font-bold mt-4 mb-2">
-              Service
-            </label>
-            <input
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"
-              type="text"
-              placeholder="Enter Service"
-              required
-            />
+            <label className="text-gray-700 font-bold mt-4 mb-2">Service</label>
+            <select className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500">
+              <option value="">Select a Service</option>
+              <option value="service1">Event Coverage</option>
+              <option value="service2">Real Estate Marketing</option>
+              <option value="service3">Mapping & Surveying</option>
+            </select>
             <br />
 
             <label className="text-indigo-700 font-bold mt-4 mb-2">Email</label>
