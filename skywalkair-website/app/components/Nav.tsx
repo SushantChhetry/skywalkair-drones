@@ -2,6 +2,7 @@
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -24,6 +25,29 @@ const Nav = () => {
           Contact Us!
         </button>
       </nav>
+      {navOpen ? (
+        <div className=" max-w-screen bg-indigo-600 text-white p-4 h-40">
+          <ul>
+            <li className="hover:text-gray-400  w-fit">
+              <Link href="#contact">Contact Us</Link>
+            </li>
+            <li className="hover:text-gray-400 w-fit">
+              <Link href="#about">About</Link>
+            </li>
+            <li className="hover:text-gray-400 w-fit">
+              <Link href="#services">Services</Link>
+            </li>
+            <li className="hover:text-gray-400 w-fit">
+              <Link href="#client">Testimonials</Link>
+            </li>
+            <li className="hover:text-gray-400 w-fit">
+              <Link href="#ceo">CEO</Link>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
