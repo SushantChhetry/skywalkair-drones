@@ -7,7 +7,7 @@ const Service = () => {
   return (
     <div className=" h-screen flex flex-col justify-center items-center px-5">
       <h1 className=" text-indigo-700 text-4xl">Our Services</h1>
-      <div className="grid grid-cols-3 max-w-screen-xl w-screen my-14 h-4/6">
+      <div className="grid grid-cols-3 max-w-screen-lg w-screen my-14 h-4/6">
         <div className=" p-4 bg-indigo-100 flex flex-col justify-center items-center">
           <Image
             src="/Party_Isometric.png"
