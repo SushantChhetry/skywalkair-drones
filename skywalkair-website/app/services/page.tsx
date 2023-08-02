@@ -21,7 +21,7 @@ const Service = () => {
             Capturing unforgettable moments from above with our expert Event
             Coverage drone services
           </p>
-          <Link href="#" target="_blank">
+          <Link href="/services/events" target="_blank">
             <BsArrowDownCircle
               size={40}
               className=" text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300  my-9"
@@ -40,7 +40,7 @@ const Service = () => {
           <p className=" text-center mx-5 my-3">
             Elevate your Real Estate Marketing with our Drone Services
           </p>
-          <Link href="#" target="_blank">
+          <Link href="/services/realestate" target="_blank">
             <BsArrowDownCircle
               size={40}
               className=" text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300  my-9"
@@ -59,7 +59,7 @@ const Service = () => {
           <p className=" text-center mx-5 my-3">
             Precision aerial mapping and surveying services for your projects
           </p>
-          <Link href="#" target="_blank">
+          <Link href="/services/mapping" target="_blank">
             <BsArrowDownCircle
               size={40}
               className=" text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300  my-9"
