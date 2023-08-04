@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
+import { AiFillCloseCircle } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,6 +26,12 @@ const Service = () => {
       setShowSecond(false);
       setShowFirst(false);
     }
+  };
+
+  const handleClose = () => {
+    setShowFirst(false);
+    setShowSecond(false);
+    setShowThird(false);
   };
 
   return (
@@ -90,12 +97,14 @@ const Service = () => {
         {showFirst && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center ">
             <div className="bg-white p-8">
+              <AiFillCloseCircle
+                className=" text-red-700 hover:text-red-400 "
+                size={22}
+                onClick={handleClose}
+              />
               <h2 className="text-indigo-700 text-2xl">
                 First Section Overlay
                 <Estate />
-                <button className=" bg-red-600 text-white hover:bg-red-300 text-sm p-2 m-2 rounded-2xl">
-                  Close
-                </button>
               </h2>
               {/* Add your additional content for the first section */}
             </div>
