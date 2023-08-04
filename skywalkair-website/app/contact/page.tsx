@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -49,7 +50,9 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="">Slideshow</div>
+        <div className="">
+          <Image src="/contact.gif" height={500} width={500} alt="contact" />
+        </div>
       </div>
     </div>
   );
