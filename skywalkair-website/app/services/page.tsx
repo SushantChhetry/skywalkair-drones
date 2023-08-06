@@ -5,7 +5,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 
+// Pages
 import Estate from "./realestate/page";
+import Mapping from "./mapping/page";
+import Event from "./events/page";
 
 const Service = () => {
   const [showFirst, setShowFirst] = useState(false);
@@ -102,11 +105,7 @@ const Service = () => {
                 size={22}
                 onClick={handleClose}
               />
-              <h2 className="text-indigo-700 text-2xl">
-                First Section Overlay
-                <Estate />
-              </h2>
-              {/* Add your additional content for the first section */}
+              <Event />
             </div>
           </div>
         )}
@@ -115,10 +114,12 @@ const Service = () => {
         {showSecond && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="bg-white p-8">
-              <h2 className="text-indigo-700 text-2xl">
-                Second Section Overlay
-              </h2>
-              {/* Add your additional content for the second section */}
+              <AiFillCloseCircle
+                className=" text-red-700 hover:text-red-400 "
+                size={22}
+                onClick={handleClose}
+              />
+              <Estate />
             </div>
           </div>
         )}
@@ -127,10 +128,12 @@ const Service = () => {
         {showThird && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div className="bg-white p-8">
-              <h2 className="text-indigo-700 text-2xl">
-                Third Section Overlay
-              </h2>
-              {/* Add your additional content for the third section */}
+              <AiFillCloseCircle
+                className=" text-red-700 hover:text-red-400 "
+                size={22}
+                onClick={handleClose}
+              />
+              <Mapping />
             </div>
           </div>
         )}
