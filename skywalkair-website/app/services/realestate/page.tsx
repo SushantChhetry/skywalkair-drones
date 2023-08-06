@@ -2,10 +2,16 @@ import React from "react";
 
 function Estate() {
   return (
-    <div className=" flex justify-evenly gap-3 items-center mx-10 h-fit p-12">
-      <div>
-        <div className=" bg-indigo-700 -z-10 h-10 w-screen max-w-xl"></div>
-      </div>
+    <div className=" flex justify-evenly gap-5 items-center mx-10 h-fit p-12">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/BaVpeJlcQzg"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className=" p-4"
+      ></iframe>
 
       <div className="max-w-xs text-indigo-700">
         <h3 className=" text-2xl"> Real Estate Marketing</h3>
