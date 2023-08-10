@@ -2,8 +2,9 @@ import React from 'react'
 
 const Detail = () => {
   return (
-    <div>page</div>
+    <div>Detail wotj ceo</div>
   )
 }
 
 export default Detail
+
