@@ -1,7 +1,8 @@
 import React from "react";
 import {
   AiFillFacebook,
-  AiFillTwitterSquare,
+  AiFillYoutube,
+  AiFillPhone,
   AiFillInstagram,
 } from "react-icons/ai";
 
@@ -9,9 +10,10 @@ import Link from "next/link";
 
 const Social = () => {
   const urls = {
-    facebook: "https://www.google.com/",
-    instagram: "https://www.google.com/",
-    youtube: "https://www.google.com/",
+    facebook: "https://www.facebook.com/profile.php?id=61550085816051&sk=about",
+    instagram:
+      "https://instagram.com/skywalkairal?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
+    youtube: "https://youtube.com/@SkywalkAIR?feature=share7",
     phone: "2562253874",
     email: "email@emai.com",
   };
@@ -47,13 +49,20 @@ const Social = () => {
               />
             </Link>
             <Link href={urls.facebook} target="_blank">
-              <AiFillTwitterSquare
+              <AiFillYoutube
                 className=" text-indigo-600 hover:text-indigo-300 my-2"
                 size={50}
               />
             </Link>
             <Link href={urls.facebook} target="_blank">
               <AiFillInstagram
+                className=" text-indigo-600 hover:text-indigo-300 my-2"
+                size={50}
+              />
+            </Link>
+
+            <Link href={`tel: ${urls.phone}`}>
+              <AiFillPhone
                 className=" text-indigo-600 hover:text-indigo-300 my-2"
                 size={50}
               />
