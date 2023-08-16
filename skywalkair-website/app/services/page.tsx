@@ -126,7 +126,7 @@ const Service = () => {
 
         {/* Overlay div for the third section */}
         {showThird && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-23">
             <div className="bg-white p-8">
               <AiFillCloseCircle
                 className=" text-red-700 hover:text-red-400 "

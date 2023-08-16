@@ -2,7 +2,7 @@ import React from "react";
 
 function Estate() {
   return (
-    <div className=" flex justify-evenly gap-5 items-center mx-10 h-fit p-12">
+    <div className=" flex justify-evenly gap-5 items-center mx-10 h-fit p-12 md:flex-row flex-col-reverse">
       <iframe
         width="560"
         height="315"
