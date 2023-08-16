@@ -14,22 +14,24 @@ import Social from "./social/pages";
 
 export default function Home() {
   return (
-    <div className=" h-screen ">
+    <div className="min-h-screen ">
       <Nav />
-      <main className=" bg-blue-50 flex flex-col justify-center items-center  h-screen">
-        <div className="flex px-5 py-2 m-10 items-center justify-between  gap-10">
+      <main className="bg-blue-50 flex flex-col justify-center items-center h-screen">
+        <div className="flex flex-col md:flex-row px-5 py-2 m-10 items-center justify-between gap-10">
           <div className="max-w-2xl flex justify-center items-center flex-col">
-            <h2 className=" text-5xl text-blue-900">
+            <h2 className="text-3xl md:text-5xl text-blue-900 text-center">
               Enhance your visuals with awe-inspiring aerial perspectives filmed
               by our expert drone videography services.
             </h2>
           </div>
-          <Image src="/logo.png" width={350} height={350} alt="logo" />
+          <div className="flex justify-center items-center">
+            <Image src="/Logo.jpg" width={350} height={350} alt="logo" />
+          </div>
         </div>
         <Link href="#about">
           <BsArrowDownCircle
             size={40}
-            className=" text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300"
+            className="text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300"
           />
         </Link>
       </main>

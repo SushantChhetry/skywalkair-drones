@@ -7,7 +7,7 @@ function Event() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/BaVpeJlcQzg"
+          src="https://www.youtube.com/embed/q16fCuT7Imc"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

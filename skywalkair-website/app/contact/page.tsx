@@ -20,21 +20,22 @@ const Contact = () => {
     console.log("Submitting Form");
 
     const { name, email, service, phone } = formData;
-
-    const requestOptions = {
+    const res = await fetch("pages/api/send-email", {
+      body: JSON.stringify({
+        name,
+        email,
+        service,
+        phone,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, service, phone }),
-    };
+    });
 
-    try {
-      const response = await fetch("/api/send-mail", requestOptions);
-      const data = await response.json();
+    const result = await res.json;
 
-      console.log("Message sent successfully:", data.message);
-    } catch (error) {
-      console.log("Error sending message:", error);
-    }
+    console.log(result);
 
     setFormData({
       name: "",
