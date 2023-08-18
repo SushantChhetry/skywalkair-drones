@@ -53,7 +53,7 @@ const Contact = () => {
     <div className=" h-screen flex flex-col justify-center items-center">
       <h3 className=" text-indigo-700 text-3xl">Contact Us!</h3>
       <br />
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col justify-center items-center">
           <form
             className="w-96 bg-white rounded-lg p-6 shadow-md"
@@ -118,7 +118,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="">
+        <div className=" w-0 md:w-fit">
           <Image src="/contact.gif" height={500} width={500} alt="contact" />
         </div>
       </div>
