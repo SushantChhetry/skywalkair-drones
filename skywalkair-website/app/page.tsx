@@ -11,6 +11,7 @@ import Client from "./client/page";
 import Service from "./services/page";
 import Contact from "./contact/page";
 import Social from "./social/pages";
+import Detail from "./details/page";
 
 export default function Home() {
   return (
@@ -47,6 +48,9 @@ export default function Home() {
         </section>
         <section id="ceo">
           <CEO />
+        </section>
+        <section id="detail">
+          <Detail />
         </section>
         <section id="contact">
           <Contact />
