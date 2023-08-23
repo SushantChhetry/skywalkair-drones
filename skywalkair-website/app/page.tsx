@@ -18,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen ">
       <Nav />
       <main className="bg-blue-50 flex flex-col justify-center items-center h-screen">
-        <div className="flex flex-col md:flex-row px-5 py-2 m-10 items-center justify-between gap-10">
+        <div className="flex md:flex-row px-5 py-2 m-10 items-center justify-between gap-10 flex-col-reverse">
           <div className="max-w-2xl flex justify-center items-center flex-col">
             <h2 className="text-3xl md:text-5xl text-blue-900 text-center">
               Enhance your visuals with awe-inspiring aerial perspectives filmed
@@ -26,13 +26,14 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex justify-center items-center">
-            <Image src="/Logo.jpg" width={350} height={350} alt="logo" />
+            <Image src="/Logo.png" height={500} width={500} alt="logo" />
           </div>
         </div>
         <Link href="#about">
           <BsArrowDownCircle
             size={40}
-            className="text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-indigo-300 duration-300"
+            className="text-indigo-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
+             hover:text-indigo-300 duration-300 opacity-0 md:opacity-100"
           />
         </Link>
       </main>
