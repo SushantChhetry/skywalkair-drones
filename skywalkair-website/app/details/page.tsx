@@ -4,8 +4,8 @@ import Image from "next/image";
 const Detail = () => {
   return (
     <div className=" h-screen bg-blue-50 flex flex-col justify-center items-center m-6">
-      <div className=" flex flex-col md:flex-row">
-        <Image src="/WhyUs.jpg" alt="drone" width={500} height={500} />
+      <div className=" flex flex-col md:flex-row gap-6">
+        <Image src="/WhyUs.jfif" alt="drone" width={500} height={500} />
         <div className=" max-w-lg text-center justify-center items-center">
           <h1 className=" text-4xl text-blue-900 my-8">Why Us?</h1>
           <p className="text-xl md:text-lg text-indigo-700">
